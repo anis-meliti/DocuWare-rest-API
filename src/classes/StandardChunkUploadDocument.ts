@@ -1,6 +1,5 @@
 import * as DWRest from "../types/DW_Rest";
 
-import { exception } from "console";
 import mime from "mime-types"; //https://www.npmjs.com/package/mime-types
 import path from "path";
 import tar from "tar";
@@ -64,7 +63,7 @@ export class StandardChunkUploadDocument
 
     // Throw exception when FilesPath contains no element
     if (this.FilesPath.length < 1) {
-      throw exception(this._ErrorFilesPathNotSet);
+      throw Error(this._ErrorFilesPathNotSet);
     }
 
     // Return content-type of the single file or the container
@@ -95,7 +94,7 @@ export class StandardChunkUploadDocument
 
     // Throw exception when FilesPath contains no element
     if (this.FilesPath.length < 1) {
-      throw exception(this._ErrorFilesPathNotSet);
+      throw Error(this._ErrorFilesPathNotSet);
     }
 
     // Return for single file its path or for more files creates a container and return its path
@@ -118,7 +117,7 @@ export class StandardChunkUploadDocument
 
     // Throw exception when FilesPath contains no element
     if (this.FilesPath.length < 1) {
-      throw exception(this._ErrorFilesPathNotSet);
+      throw Error(this._ErrorFilesPathNotSet);
     }
 
     if (this.FilesPath.length === 1 || this.IsOnlySection) {
@@ -147,7 +146,7 @@ export class StandardChunkUploadDocument
 
     // Throw exception when FilesPath contains no element
     if (this.FilesPath.length < 1) {
-      throw exception(this._ErrorFilesPathNotSet);
+      throw Error(this._ErrorFilesPathNotSet);
     }
 
     // Set the correct file name format depending on single or multiple files
@@ -187,7 +186,7 @@ export class StandardChunkUploadDocument
 
     // Throw exception when FilesPath contains no element
     if (this.FilesPath.length < 1) {
-      throw exception(this._ErrorFilesPathNotSet);
+      throw Error(this._ErrorFilesPathNotSet);
     }
 
     // Return in Document format if it is only a single section and multiple section with only one application properties
@@ -233,7 +232,7 @@ export class StandardChunkUploadDocument
 
     // Throw exception when FilesPath contains no element
     if (this.FilesPath.length < 1) {
-      throw exception(this._ErrorFilesPathNotSet);
+      throw Error(this._ErrorFilesPathNotSet);
     }
 
     // Always return content-type json format

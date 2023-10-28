@@ -13,7 +13,7 @@ import querystring from "querystring"; //https://nodejs.org/api/querystring.html
 import path from "path";
 import contentDisposition, { ContentDisposition } from "content-disposition"; //https://github.com/jshttp/content-disposition
 import timespan from "timespan"; //https://www.npmjs.com/package/timespan
-import readChunk from "read-chunk";
+import { readChunkSync } from 'read-chunk';
 import { StandardChunkUploadDocument } from "./classes/StandardChunkUploadDocument";
 
 /**
@@ -715,11 +715,10 @@ class RestCallWrapper {
       }
 
       //Get chunk for upload and force readChunk to work synchronously
-      const chunk = readChunk.sync(
-        uploadDocument.UploadFilePath,
-        offset,
-        chunkSize
-      );
+      const chunk = readChunkSync(uploadDocument.UploadFilePath, {
+        length: chunkSize,
+        startPosition: offset,
+      });
 
       runCount += 1;
       let formData: any = null;
