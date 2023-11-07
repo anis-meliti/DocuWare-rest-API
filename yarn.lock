@@ -95,10 +95,10 @@
   resolved "https://registry.yarnpkg.com/@types/caseless/-/caseless-0.12.3.tgz#8f7d6c8b536af838966b77ce73d63562561d2b92"
   integrity sha512-ZD/NsIJYq/2RH+hY7lXmstfp/v9djGt9ah+xRQ3pcgR79qiKsG4pLl25AI7IcXxVO8dH9GiBE5rAknC0ePntlw==
 
-"@types/content-disposition@^0.5.4":
-  version "0.5.6"
-  resolved "https://registry.yarnpkg.com/@types/content-disposition/-/content-disposition-0.5.6.tgz#0f5fa03609f308a7a1a57e0b0afe4b95f1d19740"
-  integrity sha512-GmShTb4qA9+HMPPaV2+Up8tJafgi38geFi7vL4qAM7k8BwjoelgHZqEUKJZLvughUw22h6vD/wvwN4IUCaWpDA==
+"@types/content-disposition@^0.5.8":
+  version "0.5.8"
+  resolved "https://registry.yarnpkg.com/@types/content-disposition/-/content-disposition-0.5.8.tgz#6742a5971f490dc41e59d277eee71361fea0b537"
+  integrity sha512-QVSSvno3dE0MgO76pJhmv4Qyi/j0Yk9pBp0Y7TJ2Tlj+KCgJWY6qX7nnxCOLkZ3VYRSIk1WTxCvwUSdx6CCLdg==
 
 "@types/eslint-visitor-keys@^1.0.0":
   version "1.0.0"
